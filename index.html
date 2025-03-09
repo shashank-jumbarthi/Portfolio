@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zachary Ryan - Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #333333;
+        line-height: 1.6;
+      }
+      h1 {
+        font-size: 50px;
+        color: #0b3d0b;
+        font-family: "Playfair Display", serif;
+      }
+      header {
+        background-color: #f8f1e8;
+        padding: 3rem 0;
+        text-align: center;
+        margin-top: 3.5rem;
+      }
+      nav {
+        background-color: #31675f;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: 0 1rem;
+      }
+      .profile-bio {
+        color: #0b3d0b;
+        font-size: 22px;
+        font-family: "Playfair Display", serif;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 2rem 0;
+      }
+      .section {
+        margin: 3rem 0;
+        padding: 2rem;
+        background-color: #fdfdfd;
+        border: 1px solid #eaeaea;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .section h2 {
+        color: #0b3d0b;
+        font-size: 32px;
+        text-align: center;
+      }
+      .profile img {
+        width: 200px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+      .button {
+        display: inline-block;
+        padding: 0.6rem 1.2rem;
+        margin-top: 1rem;
+        color: white;
+        background-color: #31675f;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .about-me-para {
+        text-align: justify;
+      }
+      footer {
+        text-align: center;
+        padding: 2rem 0;
+        background-color: #f8f1e8;
+        color: #555555;
+        margin-top: 3rem;
+      }
+      .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+      .project-box {
+        width: 30%;
+        padding: 1.5rem;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .project-description {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        color: #555555;
+      }
+      .skills {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+      }
+      .skill-item {
+        text-align: center;
+      }
+      /* Increased from 40px to 43px for about a 7% increase */
+      .skill-logo {
+        width: 43px;
+        height: 43px;
+      }
+      /* Increased font size from 0.8rem to 0.86rem for about a 7% increase */
+      .skill-item small {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 0.86rem;
+        color: #333;
+      }
+      .achievements ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        line-height: 2;
+      }
+      @media (max-width: 768px) {
+        .project-box {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="assets/Zachary_Ryan_Resume_Spring_Semester.pdf" target="_blank"
+        >Resume</a
+      >
+    </nav>
+
+    <header>
+      <h1>Zachary Ryan</h1>
+      <p class="profile-bio">Cybersecurity Student | Navy Veteran</p>
+    </header>
+
+    <div class="container">
+      <section id="about" class="section">
+        <div class="profile">
+          <img src="assets/final-profile-picture.png" alt="Zachary Ryan" />
+        </div>
+        <h2>About Me</h2>
+        <p class="about-me-para">
+          As a Navy veteran with experience in primary and secondary nuclear
+          equipment systems, I've honed my skills in time management and
+          thriving under pressure. My ability to work effectively in team
+          settings and navigate stressful situations seamlessly translates into
+          professional situations. I'm furthering my education by pursuing a
+          degree in Cybersecurity. As I continue my educational journey, I'm
+          eager to expand my technical skills and apply them to new challenges
+          in the cybersecurity field.
+        </p>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+              alt="SQL"
+              class="skill-logo"
+            />
+            <small>SQL</small>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Python"
+              class="skill-logo"
+            />
+            <small>Python</small>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg"
+              alt="Windows"
+              class="skill-logo"
+            />
+            <small>Windows</small>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+              alt="Linux"
+              class="skill-logo"
+            />
+            <small>Linux</small>
+          </div>
+          <div class="skill-item">
+            <img
+              src="assets/cyber-security.png"
+              alt="Cybersecurity"
+              class="skill-logo"
+            />
+            <small>Cybersecurity</small>
+          </div>
+          <div class="skill-item">
+            <img
+              src="assets/forensics.png"
+              alt="Digital Forensics"
+              class="skill-logo"
+            />
+            <small>Digital Forensics</small>
+          </div>
+          <div class="skill-item">
+            <img
+              src="assets/communication.png"
+              alt="Communication Skills"
+              class="skill-logo"
+            />
+            <small>Communication</small>
+          </div>
+          <div class="skill-item">
+            <img
+              src="assets/team-leadership.png"
+              alt="Team Leadership"
+              class="skill-logo"
+            />
+            <small>Team Leadership</small>
+          </div>
+          <div class="skill-item">
+            <img
+              src="assets/cyber-crime.png"
+              alt="Cyberlaw"
+              class="skill-logo"
+            />
+            <small>Cyberlaw</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="project-box">
+            <h3>To-Do List Application</h3>
+            <p class="project-description">
+              A task management app to efficiently organize your daily
+              activities.
+            </p>
+            <a
+              href="https://github.com/Zachary200114/To-Do-List-Application"
+              class="button"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+          <div class="project-box">
+            <h3>Calculator</h3>
+            <p class="project-description">
+              A simple and functional calculator for everyday arithmetic
+              operations.
+            </p>
+            <a
+              href="https://github.com/Zachary200114/Calculator"
+              class="button"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+          <div class="project-box">
+            <h3>Number Guessing Game</h3>
+            <p class="project-description">
+              An interactive game that challenges you to guess the correct
+              number.
+            </p>
+            <a
+              href="https://github.com/Zachary200114/Number-Guessing-Game"
+              class="button"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements" class="section achievements">
+        <h2>Achievements & Co-Curricular Activities</h2>
+        <ul>
+          <li>Member of the Cybersecurity Club at RMU</li>
+          <li>Member of Capture The Flag (CTF) for RMU</li>
+          <li>Google Cybersecurity Specialization Certificate</li>
+          <li>
+            President's List award recipient and Dean's List recipient for
+            academic excellence
+          </li>
+          <li>
+            Active participant in Top Secret Colonials, RMU's cybersecurity
+            organization
+          </li>
+          <li>Recipient of the RMU Merit Scholarship</li>
+          <li>
+            US Navy Machinist Mate - Leadership in high-pressure environments
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>&copy; 2025 Zachary Ryan. All rights reserved.</footer>
+  </body>
+</html>
