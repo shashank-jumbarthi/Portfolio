@@ -19,9 +19,10 @@
         background-color: #ffffff;
         color: #333333;
         line-height: 1.6;
+        font-size: 18px; /* Increased base font size */
       }
       h1 {
-        font-size: 50px;
+        font-size: 60px; /* Increased from 50px */
         color: #0b3d0b;
         font-family: "Playfair Display", serif;
       }
@@ -45,7 +46,7 @@
       nav a {
         color: white;
         text-decoration: none;
-        font-size: 1.1rem;
+        font-size: 1.3rem; /* Increased from 1.1rem */
         padding: 0 1rem;
       }
       .profile-bio {
@@ -67,7 +68,7 @@
       }
       .section h2 {
         color: #0b3d0b;
-        font-size: 32px;
+        font-size: 38px; /* Increased from 32px */
         text-align: center;
       }
       .profile img {
@@ -130,17 +131,33 @@
         width: 43px;
         height: 43px;
       }
-      /* Increased font size from 0.8rem to 0.86rem for about a 7% increase */
+      /* Increased font size from 0.8rem to 1rem for better readability */
       .skill-item small {
         display: block;
         margin-top: 0.5rem;
-        font-size: 0.86rem;
+        font-size: 1rem;
         color: #333;
       }
       .achievements ul {
         list-style-type: disc;
         padding-left: 20px;
         line-height: 2;
+      }
+      /* Contact section styling updated */
+      #contact {
+        text-align: center;
+      }
+      /* Remove bullet points from the contact list */
+      #contact ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      /* Make hyperlinks in the contact section clearly noticeable */
+      #contact a {
+        color: black;
+        text-decoration: underline;
+        font-size: 1.2rem;
       }
       @media (max-width: 768px) {
         .project-box {
@@ -155,6 +172,7 @@
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
       <a href="assets/Zachary_Ryan_Resume_Spring_Semester.pdf" target="_blank"
         >Resume</a
       >
@@ -321,6 +339,30 @@
           <li>Recipient of the RMU Merit Scholarship</li>
           <li>
             US Navy Machinist Mate - Leadership in high-pressure environments
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/zachary-ryan01/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/Zachary200114" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a href="mailto:Zxrst175@mail.rmu.edu">Zxrst175@mail.rmu.edu</a>
+          </li>
+          <li>
+            <a href="tel:+17247770254">(724)-777-0254</a>
           </li>
         </ul>
       </section>
