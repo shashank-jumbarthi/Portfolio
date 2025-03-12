@@ -126,16 +126,21 @@
       .skill-item {
         text-align: center;
       }
-      /* Skill icons styling with hover effect (scale up by 50%) */
+      /* Skill icons styling with hover effect: scale up by 40% */
       .skill-logo {
         width: 43px;
         height: 43px;
         transition: transform 0.3s ease;
       }
+      /* Standard CSS hover will still work */
       .skill-logo:hover {
-        transform: scale(1.5);
+        transform: scale(1.4);
       }
-      /* Increased font size from 0.8rem to 1rem for better readability */
+      /* The .pop class (added via JavaScript) also scales the icon */
+      .pop {
+        transform: scale(1.4);
+      }
+      /* Increased font size for better readability */
       .skill-item small {
         display: block;
         margin-top: 0.5rem;
@@ -157,7 +162,7 @@
         padding: 0;
         margin: 0;
       }
-      /* Make hyperlinks in the contact section clearly noticeable */
+      /* Underline hyperlinks in the contact section */
       #contact a {
         color: black;
         text-decoration: underline;
@@ -373,5 +378,19 @@
     </div>
 
     <footer>&copy; 2025 Zachary Ryan. All rights reserved.</footer>
+
+    <script>
+      // For a "sticky" pop effect, add a class when mouse enters and remove it after a short delay.
+      const icons = document.querySelectorAll(".skill-logo");
+      icons.forEach((icon) => {
+        icon.addEventListener("mouseenter", () => {
+          icon.classList.add("pop");
+          // Remove the pop effect after 500ms (adjust as needed)
+          setTimeout(() => {
+            icon.classList.remove("pop");
+          }, 500);
+        });
+      });
+    </script>
   </body>
 </html>
