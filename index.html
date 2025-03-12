@@ -126,10 +126,14 @@
       .skill-item {
         text-align: center;
       }
-      /* Increased from 40px to 43px for about a 7% increase */
+      /* Skill icons styling with hover effect (scale up by 50%) */
       .skill-logo {
         width: 43px;
         height: 43px;
+        transition: transform 0.3s ease;
+      }
+      .skill-logo:hover {
+        transform: scale(1.5);
       }
       /* Increased font size from 0.8rem to 1rem for better readability */
       .skill-item small {
