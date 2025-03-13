@@ -19,10 +19,10 @@
         background-color: #ffffff;
         color: #333333;
         line-height: 1.6;
-        font-size: 18px; /* Increased base font size */
+        font-size: 18px;
       }
       h1 {
-        font-size: 60px; /* Increased from 50px */
+        font-size: 60px;
         color: #0b3d0b;
         font-family: "Playfair Display", serif;
       }
@@ -46,7 +46,7 @@
       nav a {
         color: white;
         text-decoration: none;
-        font-size: 1.3rem; /* Increased from 1.1rem */
+        font-size: 1.3rem;
         padding: 0 1rem;
       }
       .profile-bio {
@@ -68,7 +68,7 @@
       }
       .section h2 {
         color: #0b3d0b;
-        font-size: 38px; /* Increased from 32px */
+        font-size: 38px;
         text-align: center;
       }
       .profile img {
@@ -104,7 +104,8 @@
         gap: 1.5rem;
       }
       .project-box {
-        width: 30%;
+        flex: 1 1 calc(33.33% - 1.5rem);
+        max-width: calc(33.33% - 1.5rem);
         padding: 1.5rem;
         background-color: #f9f9f9;
         border: 1px solid #ddd;
@@ -126,21 +127,17 @@
       .skill-item {
         text-align: center;
       }
-      /* Skill icons styling with hover effect: scale up by 40% */
       .skill-logo {
         width: 43px;
         height: 43px;
         transition: transform 0.3s ease;
       }
-      /* Standard CSS hover will still work */
       .skill-logo:hover {
         transform: scale(1.4);
       }
-      /* The .pop class (added via JavaScript) also scales the icon */
       .pop {
         transform: scale(1.4);
       }
-      /* Increased font size for better readability */
       .skill-item small {
         display: block;
         margin-top: 0.5rem;
@@ -152,17 +149,14 @@
         padding-left: 20px;
         line-height: 2;
       }
-      /* Contact section styling updated */
       #contact {
         text-align: center;
       }
-      /* Remove bullet points from the contact list */
       #contact ul {
         list-style: none;
         padding: 0;
         margin: 0;
       }
-      /* Underline hyperlinks in the contact section */
       #contact a {
         color: black;
         text-decoration: underline;
@@ -170,7 +164,8 @@
       }
       @media (max-width: 768px) {
         .project-box {
-          width: 100%;
+          flex: 1 1 100%;
+          max-width: 100%;
         }
       }
     </style>
@@ -330,6 +325,18 @@
               >View Project</a
             >
           </div>
+          <div class="project-box">
+            <h3>Port Scanner</h3>
+            <p class="project-description">
+              A simple web-based port scanner using Flask and Python.
+            </p>
+            <a
+              href="https://github.com/Zachary200114/Ports"
+              class="button"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
         </div>
       </section>
 
@@ -344,7 +351,7 @@
           <li>
             President's List award recipient at CCBC for academic excellence
           </li>
-          <li>Deans list recipient at RMU for academic excellence</li>
+          <li>Dean's List recipient at RMU for academic excellence</li>
           <li>Recipient of the RMU Merit Scholarship</li>
           <li>
             US Navy Machinist Mate - Leadership in high-pressure environments
