@@ -6,7 +6,7 @@ Welcome to my personal portfolio website! This site showcases my background, ski
 
 This portfolio website highlights my journey from being a cybersecurity student. It features the following sections:
 
-- About Me: An overview of my background, including my transition from the Navy to cybersecurity.
+- About Me: An overview of my background, including my transition to cybersecurity.
 - Skills: A display of technical and professional skills with interactive icons that pop out when hovered over—even if you quickly slide your cursor across multiple icons.
 - Projects: Personal projects that demonstrate my coding proficiency and problem-solving abilities.
 - Achievements: A summary of academic and extracurricular accomplishments, including certifications and club involvement.
@@ -42,7 +42,7 @@ Copy
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Zachary200114/portfolio-website.git
+   git clone https://github.com/shashank-jumbarthi/portfolio.git
    Open index.html in your browser to view the website.
    JavaScript Functionality
    The website uses JavaScript to create a "sticky pop" effect on the skill icons. When your cursor enters a skill icon, the icon temporarily scales up by 40%, even if you quickly slide your mouse across several icons. Here's the key JavaScript snippet used:
@@ -71,6 +71,6 @@ Contact
 Feel free to reach out if you'd like to collaborate, discuss cybersecurity topics, or just connect:
 
 Email: shashankjumbarthi7@gmail.com
-LinkedIn: shashank jumbarthi
+LinkedIn: shashankjumbarthi
 GitHub: shashank-jumbarthi
 © 2025 Shashank Jumbarthi. All rights reserved.
